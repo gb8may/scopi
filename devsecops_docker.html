@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<!--
+	Halcyonic by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	
+<!-- Mirrored from mayara.gouveia.info/devsecops_docker.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Sep 2018 00:05:54 GMT -->
+<head>
+		<title>Talking about security by Mayara Gouveia</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body class="subpage">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<header id="header" class="container">
+						<div class="row">
+							<div class="12u">
+
+								<!-- Logo -->
+									<h1><a href="#" id="logo">Talking about security..</a></h1>
+
+								<!-- Nav -->
+									<nav id="nav">
+										<a href="index-2.html">Homepage</a>
+										<a href="posts.html">Posts</a>
+									</nav>
+
+							</div>
+						</div>
+					</header>
+				</div>
+
+			<!-- Content -->
+				<div id="content-wrapper">
+					<div id="content">
+						<div class="container">
+							<div class="row">
+								<div class="12u">
+
+									<!-- Main Content-->
+										<section>
+											<header>
+												<h2><strong>DevSecOps: Security on Operations Development.</strong></h2>
+												<h3>How to provide security on DevOps?</h3>
+											</header>
+											<p>
+												When you think about the DevOps term, generally you think about a faster delivery
+												of some technologies like containers or cloud for example. But one thing people
+												don’t pay attention is about the security involved in these operations.<br/>
+												The term DevOps is largely know around the world, even though it is a “new” term.
+												What about when we talk about the DevSecOps term? Have you ever heard about?<br/>
+												Are you and your company being cautious and taking care about the security on the
+												DevOps tools and procedures?<br/>
+												Generally the security reviews are on the end of producing cycles, and this may
+												not be the most effective way.
+												Every time it is more needed that we put all the teams together:<br/>
+												Development, operations and security team.<br/>
+												Sometimes we need to create security practices that must be put in use straight from
+												the beginning of the production cycle.
+												This must be looked like a new philosophy to help all the operations making the most
+												efficient delivery.
+												The most important thing on this transformation is to make us all understand how each
+												team works. Understanding all the processes and best practices are the key to best apply
+												your knowledge on all operation process.<br/>
+											  <br/>
+												<br/>
+												We can use Docker as an example to work the best practices:
+												<br/>
+												<br/>
+												First thing we need to consider when using Docker, is the host machine.
+												With a shared kernel, you need to provide the security, beginning from the the host
+												machine. Once the host is compromised, all the processes are compromised as well.<br/>
+												Don’t forget that the container is just a process inside your host machine.
+												The main step to provide the security on the host is to keep the system up to date and
+												corrections patched.<br/>
+												Know the container's layers!<br/>
+												It’s very important to know what’s running in each layer of your container. You need to ensure
+												that the third-party vendors will not download and run something deliberately without your
+												knowledge.<br/>
+												Be sure that you know the source of your images. The best tip is: Build your own code!<br/>
+												Even for your own images, you need to use some method to ensure the authenticity of a entity
+												that will publish the container, like a public key mechanism.<br/>
+												The Docker Store is a good place to look for images. Don't forget that anyone can put their
+												code on Docker Hub.<br/>
+												Limit your container system resources. The best way of doing this is using an orchestrator,
+												like Kubernetes, Swarm and others.
+												Those orchestrating systems can be used like a real time monitor, delivering you some graphs
+												and logs to help your administration. So be proactive!<br/>
+												Do not use a super-privileged mode. Doesn’t matter the security level you provide to your
+												infrastructure, if you don’t care about root access user on your containers, it’ll not guarantee
+												the container isolation and will put all your environment at risk.
+												Be careful with your protected resources! 
+												<br/>
+												<br/>
+												<br/>
+												Security will always be the best path..
+												<br/>
+												<br/>
+												<br/>
+												<a href="https://github.com/kubernetes/dashboard#kubernetes-dashboard">Kubernetes Dashboard</a>
+											</p>
+											<p>
+												<a class="bordered-feature-image"><img src="images/kubs_graphs.png"/></a>
+											</p>
+											<a href="https://visualcosita.xyz/post/swarm2k/">Docker Swarm Dashboard with Grafana</a>
+											<p>
+												<a class="bordered-feature-image"><img src="images/swarm_dash.png"/></a>
+											</p>
+										</section>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<div id="footer-wrapper">
+					<footer id="footer" class="container">
+						<div class="row">
+							<div class="8u 12u(mobile)">
+
+								<!-- Links -->
+									<section>
+										<!--<h2>Older Posts</h2>-->
+										<div>
+											<div class="row">
+												<div class="3u 12u(mobile)">
+													<ul class="link-list last-child">
+														<li><a href="index-2.html">Homepage</a></li>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/skel-viewport.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+
+<!-- Mirrored from mayara.gouveia.info/devsecops_docker.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Sep 2018 00:05:55 GMT -->
+</html>
